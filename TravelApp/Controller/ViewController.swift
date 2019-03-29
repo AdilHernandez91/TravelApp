@@ -15,6 +15,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        
+        let storyboard = UIStoryboard(name: "Auth", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "authViewController")
+        
+        present(controller, animated: true, completion: nil)
+        
+    }
 
 }
 
