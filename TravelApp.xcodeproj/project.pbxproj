@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C05C8D152131D3BC488413C /* Pods_TravelApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D458C69F15A1DA69D1F0EBB /* Pods_TravelApp.framework */; };
 		77D4189C224E9CE400722143 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D4189B224E9CE400722143 /* AppDelegate.swift */; };
 		77D4189E224E9CE400722143 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D4189D224E9CE400722143 /* ViewController.swift */; };
 		77D418A1224E9CE400722143 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77D4189F224E9CE400722143 /* Main.storyboard */; };
 		77D418A3224E9CE600722143 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77D418A2224E9CE600722143 /* Assets.xcassets */; };
 		77D418A6224E9CE600722143 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77D418A4224E9CE600722143 /* LaunchScreen.storyboard */; };
+		77D418B5224EA0F900722143 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77D418B4224EA0F900722143 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13D60ADD7F62C97187D59203 /* Pods-TravelApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelApp/Pods-TravelApp.release.xcconfig"; sourceTree = "<group>"; };
+		517BA4C0D3702A9039A27142 /* Pods-TravelApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelApp/Pods-TravelApp.debug.xcconfig"; sourceTree = "<group>"; };
 		77D41898224E9CE400722143 /* TravelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77D4189B224E9CE400722143 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77D4189D224E9CE400722143 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		77D418A2224E9CE600722143 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77D418A5224E9CE600722143 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77D418A7224E9CE600722143 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77D418B4224EA0F900722143 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9D458C69F15A1DA69D1F0EBB /* Pods_TravelApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C05C8D152131D3BC488413C /* Pods_TravelApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56ECAB5040BB5B78A2554260 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				517BA4C0D3702A9039A27142 /* Pods-TravelApp.debug.xcconfig */,
+				13D60ADD7F62C97187D59203 /* Pods-TravelApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		77C2C9549C063E85AEE8260E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D458C69F15A1DA69D1F0EBB /* Pods_TravelApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		77D4188F224E9CE400722143 = {
 			isa = PBXGroup;
 			children = (
 				77D4189A224E9CE400722143 /* TravelApp */,
 				77D41899224E9CE400722143 /* Products */,
+				56ECAB5040BB5B78A2554260 /* Pods */,
+				77C2C9549C063E85AEE8260E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +80,55 @@
 		77D4189A224E9CE400722143 /* TravelApp */ = {
 			isa = PBXGroup;
 			children = (
-				77D4189B224E9CE400722143 /* AppDelegate.swift */,
-				77D4189D224E9CE400722143 /* ViewController.swift */,
-				77D4189F224E9CE400722143 /* Main.storyboard */,
+				77D418AD224E9E5600722143 /* Model */,
+				77D418AE224E9E5F00722143 /* View */,
+				77D418AF224E9E6A00722143 /* Controller */,
+				77D418B1224E9E8D00722143 /* Storyboards */,
+				77D418B0224E9E7000722143 /* Utils */,
 				77D418A2224E9CE600722143 /* Assets.xcassets */,
-				77D418A4224E9CE600722143 /* LaunchScreen.storyboard */,
 				77D418A7224E9CE600722143 /* Info.plist */,
+				77D418B4224EA0F900722143 /* GoogleService-Info.plist */,
 			);
 			path = TravelApp;
+			sourceTree = "<group>";
+		};
+		77D418AD224E9E5600722143 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		77D418AE224E9E5F00722143 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		77D418AF224E9E6A00722143 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				77D4189B224E9CE400722143 /* AppDelegate.swift */,
+				77D4189D224E9CE400722143 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		77D418B0224E9E7000722143 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		77D418B1224E9E8D00722143 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				77D4189F224E9CE400722143 /* Main.storyboard */,
+				77D418A4224E9CE600722143 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +138,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77D418AA224E9CE600722143 /* Build configuration list for PBXNativeTarget "TravelApp" */;
 			buildPhases = (
+				18EE7E38D2114CA65ACDC9B9 /* [CP] Check Pods Manifest.lock */,
 				77D41894224E9CE400722143 /* Sources */,
 				77D41895224E9CE400722143 /* Frameworks */,
 				77D41896224E9CE400722143 /* Resources */,
+				A4C9C35AEF2F3273128A0FA5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +192,68 @@
 			buildActionMask = 2147483647;
 			files = (
 				77D418A6224E9CE600722143 /* LaunchScreen.storyboard in Resources */,
+				77D418B5224EA0F900722143 /* GoogleService-Info.plist in Resources */,
 				77D418A3224E9CE600722143 /* Assets.xcassets in Resources */,
 				77D418A1224E9CE400722143 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18EE7E38D2114CA65ACDC9B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TravelApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4C9C35AEF2F3273128A0FA5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TravelApp/Pods-TravelApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelApp/Pods-TravelApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		77D41894224E9CE400722143 /* Sources */ = {
@@ -280,11 +405,13 @@
 		};
 		77D418AB224E9CE600722143 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 517BA4C0D3702A9039A27142 /* Pods-TravelApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 62CPN89QN4;
 				INFOPLIST_FILE = TravelApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,17 +419,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.germanhernandez.TravelApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		77D418AC224E9CE600722143 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13D60ADD7F62C97187D59203 /* Pods-TravelApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 62CPN89QN4;
 				INFOPLIST_FILE = TravelApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +439,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.germanhernandez.TravelApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
