@@ -43,7 +43,7 @@ class RegisterViewController: UIViewController {
             else {
                 
                 self.activityIndicator.stopAnimating()
-                // TODO: Redirect user to main storyboard
+                self.dismiss(animated: true, completion: nil)
                 
             }
             

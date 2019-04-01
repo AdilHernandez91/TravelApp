@@ -19,6 +19,7 @@ struct Storyboard {
 struct StoryboardId {
     
     static let AuthViewController = "authViewController"
+    static let MainViewController = "mainViewController"
     
 }
 
