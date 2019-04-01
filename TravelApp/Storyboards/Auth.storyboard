@@ -28,7 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="xCa-MB-heH">
-                                <rect key="frame" x="40" y="266" width="295" height="156"/>
+                                <rect key="frame" x="40" y="266" width="295" height="214"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="srd-nt-i7a">
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="40"/>
@@ -59,6 +59,10 @@
                                             <action selector="logInPressed:" destination="LeN-PN-UHu" eventType="touchUpInside" id="Kmk-cG-zdg"/>
                                         </connections>
                                     </button>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="hNx-1k-7oV">
+                                        <rect key="frame" x="0.0" y="174" width="295" height="40"/>
+                                        <color key="color" red="0.2274509804" green="0.2666666667" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </activityIndicatorView>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2JC-wQ-FLg">
@@ -99,6 +103,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="cQx-G8-Ck4"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="hNx-1k-7oV" id="dHE-Cn-bTh"/>
                         <outlet property="emailTextField" destination="srd-nt-i7a" id="Oy3-Cr-HZH"/>
                         <outlet property="passwordTextField" destination="CuW-0l-4cb" id="mnT-bu-pWo"/>
                     </connections>
@@ -119,7 +124,7 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aQ1-FJ-Okv">
-                                <rect key="frame" x="30" y="118" width="315" height="160"/>
+                                <rect key="frame" x="30" y="118" width="315" height="217"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oJU-12-XGR">
                                         <rect key="frame" x="0.0" y="0.0" width="315" height="40"/>
@@ -150,6 +155,10 @@
                                             <action selector="signUpPressed:" destination="Ebu-DP-eqc" eventType="touchUpInside" id="zpb-s3-nce"/>
                                         </connections>
                                     </button>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="A4v-yC-qAh">
+                                        <rect key="frame" x="0.0" y="180" width="315" height="37"/>
+                                        <color key="color" red="0.2274509804" green="0.2666666667" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </activityIndicatorView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="GdX-Fz-J7n" firstAttribute="height" secondItem="Dgf-nw-PQy" secondAttribute="height" id="2Bl-ky-FLW"/>
@@ -169,6 +178,7 @@
                         <viewLayoutGuide key="safeArea" id="NmP-wh-SH6"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="A4v-yC-qAh" id="WhL-kZ-u8H"/>
                         <outlet property="emailTextField" destination="oJU-12-XGR" id="Wu7-an-KZ8"/>
                         <outlet property="passwordTextField" destination="Dgf-nw-PQy" id="A8P-PJ-Xud"/>
                     </connections>

@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Firebase
 
 extension String {
     
@@ -29,6 +30,21 @@ extension UIViewController {
         alert.addAction(action)
         
         present(alert, animated: true, completion: nil)
+        
+    }
+    
+}
+
+extension Auth {
+    
+    func handleAuthError(error: Error, vc: UIViewController) {
+        
+        let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        
+        alert.addAction(action)
+        
+        vc.present(alert, animated: true, completion: nil)
         
     }
     

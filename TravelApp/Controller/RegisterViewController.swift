@@ -13,6 +13,7 @@ class RegisterViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,16 +29,20 @@ class RegisterViewController: UIViewController {
                 return
         }
         
+        activityIndicator.startAnimating()
+        
         Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
             
             if let error = error {
                 
                 debugPrint(error)
-                self.showDialog(title: "Error", message: error.localizedDescription)
+                Auth.auth().handleAuthError(error: error, vc: self)
+                self.activityIndicator.stopAnimating()
                 
             }
             else {
                 
+                self.activityIndicator.stopAnimating()
                 // TODO: Redirect user to main storyboard
                 
             }
