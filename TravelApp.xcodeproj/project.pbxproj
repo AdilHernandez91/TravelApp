@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1C05C8D152131D3BC488413C /* Pods_TravelApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D458C69F15A1DA69D1F0EBB /* Pods_TravelApp.framework */; };
+		775CB1ED2252741E00950871 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775CB1EC2252741E00950871 /* RoundedButton.swift */; };
+		775CB1EF2252793100950871 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775CB1EE2252793100950871 /* Constants.swift */; };
+		775CB1F122527A3700950871 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775CB1F022527A3700950871 /* Extensions.swift */; };
 		77D4189C224E9CE400722143 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D4189B224E9CE400722143 /* AppDelegate.swift */; };
 		77D4189E224E9CE400722143 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D4189D224E9CE400722143 /* ViewController.swift */; };
 		77D418A1224E9CE400722143 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77D4189F224E9CE400722143 /* Main.storyboard */; };
@@ -22,6 +25,9 @@
 /* Begin PBXFileReference section */
 		13D60ADD7F62C97187D59203 /* Pods-TravelApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelApp/Pods-TravelApp.release.xcconfig"; sourceTree = "<group>"; };
 		517BA4C0D3702A9039A27142 /* Pods-TravelApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelApp/Pods-TravelApp.debug.xcconfig"; sourceTree = "<group>"; };
+		775CB1EC2252741E00950871 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		775CB1EE2252793100950871 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		775CB1F022527A3700950871 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		77D41898224E9CE400722143 /* TravelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77D4189B224E9CE400722143 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77D4189D224E9CE400722143 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +114,7 @@
 		77D418AE224E9E5F00722143 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				775CB1EC2252741E00950871 /* RoundedButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -126,6 +133,8 @@
 		77D418B0224E9E7000722143 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				775CB1EE2252793100950871 /* Constants.swift */,
+				775CB1F022527A3700950871 /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -271,9 +280,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				77D418B9224EA32B00722143 /* LoginViewController.swift in Sources */,
+				775CB1ED2252741E00950871 /* RoundedButton.swift in Sources */,
 				77D4189E224E9CE400722143 /* ViewController.swift in Sources */,
 				77D4189C224E9CE400722143 /* AppDelegate.swift in Sources */,
 				77D418BB224EA33700722143 /* RegisterViewController.swift in Sources */,
+				775CB1EF2252793100950871 /* Constants.swift in Sources */,
+				775CB1F122527A3700950871 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
