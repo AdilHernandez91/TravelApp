@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		1C05C8D152131D3BC488413C /* Pods_TravelApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D458C69F15A1DA69D1F0EBB /* Pods_TravelApp.framework */; };
 		7717705E2254BC3B007BD6CE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7717705D2254BC3B007BD6CE /* User.swift */; };
+		771770602254EB0F007BD6CE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7717705F2254EB0F007BD6CE /* ProfileViewController.swift */; };
+		771770622254EB20007BD6CE /* NewTravelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771770612254EB20007BD6CE /* NewTravelViewController.swift */; };
+		771770662254FD99007BD6CE /* Travel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771770652254FD99007BD6CE /* Travel.swift */; };
+		77177068225514E5007BD6CE /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77177067225514E5007BD6CE /* RoundedTextField.swift */; };
 		775CB1ED2252741E00950871 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775CB1EC2252741E00950871 /* RoundedButton.swift */; };
 		775CB1EF2252793100950871 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775CB1EE2252793100950871 /* Constants.swift */; };
 		775CB1F122527A3700950871 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775CB1F022527A3700950871 /* Extensions.swift */; };
@@ -28,6 +32,10 @@
 		13D60ADD7F62C97187D59203 /* Pods-TravelApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelApp/Pods-TravelApp.release.xcconfig"; sourceTree = "<group>"; };
 		517BA4C0D3702A9039A27142 /* Pods-TravelApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelApp/Pods-TravelApp.debug.xcconfig"; sourceTree = "<group>"; };
 		7717705D2254BC3B007BD6CE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7717705F2254EB0F007BD6CE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		771770612254EB20007BD6CE /* NewTravelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTravelViewController.swift; sourceTree = "<group>"; };
+		771770652254FD99007BD6CE /* Travel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Travel.swift; sourceTree = "<group>"; };
+		77177067225514E5007BD6CE /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
 		775CB1EC2252741E00950871 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		775CB1EE2252793100950871 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		775CB1F022527A3700950871 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -112,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				7717705D2254BC3B007BD6CE /* User.swift */,
+				771770652254FD99007BD6CE /* Travel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -121,6 +130,7 @@
 			children = (
 				775CB1EC2252741E00950871 /* RoundedButton.swift */,
 				775CB1F22252907400950871 /* RoundedView.swift */,
+				77177067225514E5007BD6CE /* RoundedTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -132,6 +142,8 @@
 				77D4189D224E9CE400722143 /* MainViewController.swift */,
 				77D418B8224EA32B00722143 /* LoginViewController.swift */,
 				77D418BA224EA33700722143 /* RegisterViewController.swift */,
+				7717705F2254EB0F007BD6CE /* ProfileViewController.swift */,
+				771770612254EB20007BD6CE /* NewTravelViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -285,13 +297,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				771770622254EB20007BD6CE /* NewTravelViewController.swift in Sources */,
 				775CB1F32252907400950871 /* RoundedView.swift in Sources */,
 				77D418B9224EA32B00722143 /* LoginViewController.swift in Sources */,
+				77177068225514E5007BD6CE /* RoundedTextField.swift in Sources */,
+				771770602254EB0F007BD6CE /* ProfileViewController.swift in Sources */,
 				775CB1ED2252741E00950871 /* RoundedButton.swift in Sources */,
 				77D4189E224E9CE400722143 /* MainViewController.swift in Sources */,
 				77D4189C224E9CE400722143 /* AppDelegate.swift in Sources */,
 				7717705E2254BC3B007BD6CE /* User.swift in Sources */,
 				77D418BB224EA33700722143 /* RegisterViewController.swift in Sources */,
+				771770662254FD99007BD6CE /* Travel.swift in Sources */,
 				775CB1EF2252793100950871 /* Constants.swift in Sources */,
 				775CB1F122527A3700950871 /* Extensions.swift in Sources */,
 			);

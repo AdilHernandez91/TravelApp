@@ -20,13 +20,22 @@ struct StoryboardId {
     
     static let AuthViewController = "authViewController"
     static let MainViewController = "mainViewController"
+    static let ProfileViewController = "profileViewController"
+    static let newTravelViewController = "newTravelViewController"
     
 }
 
 struct AppColors {
     
-    static let Blue = #colorLiteral(red: 0.2914361954, green: 0.3395442367, blue: 0.4364506006, alpha: 1)
-    static let Red = #colorLiteral(red: 1, green: 0.4932718873, blue: 0.4739984274, alpha: 1)
-    static let White = #colorLiteral(red: 0.9626371264, green: 0.959995091, blue: 0.9751287103, alpha: 1)
+    static let Blue = #colorLiteral(red: 0.6245387197, green: 0.6577695012, blue: 0.7814520001, alpha: 1)
+    static let Red = #colorLiteral(red: 0.9471874833, green: 0.6018748283, blue: 0.5916382074, alpha: 1)
+    static let White = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+    
+}
+
+
+struct AppImages {
+    
+    static let ImagePlaceholder = "imagePlaceholder"
     
 }

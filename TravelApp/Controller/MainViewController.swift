@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class MainViewController: UITableViewController {
+class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +33,7 @@ class MainViewController: UITableViewController {
         
     }
 
-    @IBAction func logoutPressed(_ sender: UIBarButtonItem) {
+    @IBAction func logOutPressed(_ sender: UIBarButtonItem) {
         
         do {
             
