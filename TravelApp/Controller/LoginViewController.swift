@@ -11,6 +11,7 @@ import Firebase
 
 class LoginViewController: UIViewController {
 
+    
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
@@ -46,7 +47,6 @@ class LoginViewController: UIViewController {
         activityIndicator.startAnimating()
         
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
-            
             if let error = error {
                 
                 debugPrint(error)
@@ -60,7 +60,6 @@ class LoginViewController: UIViewController {
                 self.dismiss(animated: true, completion: nil)
                 
             }
-            
         }
         
     }

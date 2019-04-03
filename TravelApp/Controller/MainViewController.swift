@@ -13,13 +13,15 @@ class MainViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if Auth.auth().currentUser != nil {
+    
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if Auth.auth().currentUser == nil {
             
             presentAuthController()
             
         }
-        
     }
     
     fileprivate func presentAuthController() {
@@ -31,5 +33,21 @@ class MainViewController: UITableViewController {
         
     }
 
+    @IBAction func logoutPressed(_ sender: UIBarButtonItem) {
+        
+        do {
+            
+            try Auth.auth().signOut()
+            presentAuthController()
+            
+        } catch {
+            
+            debugPrint(error)
+            Auth.auth().handleAuthError(error: error, vc: self)
+            
+        }
+        
+    }
+    
 }
 

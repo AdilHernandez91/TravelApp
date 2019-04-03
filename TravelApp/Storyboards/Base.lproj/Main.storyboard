@@ -56,7 +56,13 @@
                             <outlet property="delegate" destination="B3m-Vt-BpO" id="USa-XW-gFh"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Accommodations" id="v8c-j7-S92"/>
+                    <navigationItem key="navigationItem" title="Accommodations" id="v8c-j7-S92">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="Whi-e8-ilV">
+                            <connections>
+                                <action selector="logoutPressed:" destination="B3m-Vt-BpO" id="ca0-Q7-g6o"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gvg-Or-ZoB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
