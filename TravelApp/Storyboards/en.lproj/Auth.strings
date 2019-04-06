@@ -1,0 +1,30 @@
+
+/* Class = "UILabel"; text = "Choose your next adventure"; ObjectID = "3mn-Rc-E7M"; */
+"3mn-Rc-E7M.text" = "Choose your next adventure";
+
+/* Class = "UIButton"; normalTitle = "Log In"; ObjectID = "9YS-Nu-s7I"; */
+"9YS-Nu-s7I.normalTitle" = "Log In";
+
+/* Class = "UIViewController"; title = "Create account"; ObjectID = "Ebu-DP-eqc"; */
+"Ebu-DP-eqc.title" = "Create account";
+
+/* Class = "UITextField"; placeholder = "Email address"; ObjectID = "FwN-TQ-Zqp"; */
+"FwN-TQ-Zqp.placeholder" = "Email address";
+
+/* Class = "UITextField"; placeholder = "Username"; ObjectID = "LfZ-8S-31Z"; */
+"LfZ-8S-31Z.placeholder" = "Username";
+
+/* Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "QdR-ZP-12d"; */
+"QdR-ZP-12d.normalTitle" = "Sign Up";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "Wc4-C3-Lt2"; */
+"Wc4-C3-Lt2.placeholder" = "Password";
+
+/* Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "ijS-mE-cjn"; */
+"ijS-mE-cjn.normalTitle" = "Sign Up";
+
+/* Class = "UITextField"; placeholder = "Email address"; ObjectID = "rvT-KB-lEy"; */
+"rvT-KB-lEy.placeholder" = "Email address";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "s8i-0j-D0a"; */
+"s8i-0j-D0a.placeholder" = "Password";

@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  TravelApp
+
+  Created by German Hernandez on 06/04/2019.
+  Copyright © 2019 German Hernandez. All rights reserved.
+*/
+
+"Validation error" = "Validation error";
+"The email address and password are both required" = "The email address and password are both required";
+"Choose an option" = "Choose an option";
+"Delete Photo" = "Delete Photo";
+"Photo from gallery" = "Photo from gallery";
+"Take a photo" = "Take a photo";
+"Cancel" = "Cancel";
+"Unable to upload document" = "Unable to upload document";
+"Error" = "Error";
+"Unable to upload image" = "Unable to upload image";
+"Unable to download url" = "Unable to download url";
+"Please fill out all required fields" = "Please fill out all required fields";

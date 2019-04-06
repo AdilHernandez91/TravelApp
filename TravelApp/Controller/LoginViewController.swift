@@ -11,7 +11,6 @@ import Firebase
 
 class LoginViewController: UIViewController {
 
-    
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
@@ -40,7 +39,9 @@ class LoginViewController: UIViewController {
         
         guard let email = emailTextField.text , email.isNotEmpty ,
             let password = passwordTextField.text , password.isNotEmpty else {
-                self.showDialog(title: "Validation error", message: "The email address and password are both required")
+                self.showDialog(
+                    title: NSLocalizedString("Validation error", comment: ""),
+                    message: NSLocalizedString("The email address and password are both required", comment: ""))
                 return
         }
         

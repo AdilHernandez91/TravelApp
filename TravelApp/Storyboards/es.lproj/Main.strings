@@ -1,0 +1,18 @@
+
+/* Class = "UITextField"; placeholder = "Title"; ObjectID = "1hf-0O-lAT"; */
+"1hf-0O-lAT.placeholder" = "Título";
+
+/* Class = "UINavigationItem"; title = "Discover"; ObjectID = "BkY-rF-EkG"; */
+"BkY-rF-EkG.title" = "Descubrir";
+
+/* Class = "UIButton"; normalTitle = "Create travel"; ObjectID = "FOg-QN-rkr"; */
+"FOg-QN-rkr.normalTitle" = "Crear viaje";
+
+/* Class = "UIViewController"; title = "New Travel"; ObjectID = "L0o-sM-NOR"; */
+"L0o-sM-NOR.title" = "Nuevo Viaje";
+
+/* Class = "UIBarButtonItem"; title = "Logout"; ObjectID = "U3T-4f-kPG"; */
+"U3T-4f-kPG.title" = "Desconectar";
+
+/* Class = "UINavigationItem"; title = "Your Travels"; ObjectID = "Zxz-qd-LsB"; */
+"Zxz-qd-LsB.title" = "Tus Viajes";

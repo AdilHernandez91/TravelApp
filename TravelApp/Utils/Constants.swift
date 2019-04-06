@@ -39,3 +39,18 @@ struct AppImages {
     static let ImagePlaceholder = "imagePlaceholder"
     
 }
+
+
+struct Collections {
+    
+    static let Users = "users"
+    static let Travels = "travels"
+    
+}
+
+
+struct ImageTypes {
+    
+    static let JPG = "image/jpg"
+    
+}

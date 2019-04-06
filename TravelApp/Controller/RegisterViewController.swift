@@ -20,7 +20,6 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     @IBAction func signUpPressed(_ sender: UIButton) {
@@ -28,7 +27,9 @@ class RegisterViewController: UIViewController {
         guard let email = emailTextField.text , email.isNotEmpty ,
             let username = usernameTextField.text , username.isNotEmpty ,
             let password = passwordTextField.text , password.isNotEmpty else {
-                showDialog(title: "Validation error", message: "The email address and password are both required")
+                showDialog(
+                    title: NSLocalizedString("Validation error", comment: ""),
+                    message: NSLocalizedString("The email address and password are both required", comment: ""))
                 return
         }
         
@@ -37,20 +38,18 @@ class RegisterViewController: UIViewController {
         Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
             
             if let error = error {
-                
                 debugPrint(error)
-                Auth.auth().handleAuthError(error: error, vc: self)
-                self.activityIndicator.stopAnimating()
                 
+                Auth.auth().handleAuthError(error: error, vc: self)
+                
+                self.activityIndicator.stopAnimating()
             }
             else {
-                
                 guard let firUser = result?.user else { return }
                 
                 let user = User.init(id: firUser.uid, email: email, username: username)
                 
                 self.createFirestoreUser(user: user)
-                
             }
             
         }
@@ -58,7 +57,7 @@ class RegisterViewController: UIViewController {
     }
     
     func createFirestoreUser(user: User) {
-        let newUserRef = Firestore.firestore().collection("users").document(user.id)
+        let newUserRef = Firestore.firestore().collection(Collections.Users).document(user.id)
         
         let data = User.modelToData(user: user)
         

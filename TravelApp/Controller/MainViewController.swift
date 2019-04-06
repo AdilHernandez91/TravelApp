@@ -13,14 +13,11 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    
     }
     
     override func viewWillAppear(_ animated: Bool) {
         if Auth.auth().currentUser == nil {
-            
             presentAuthController()
-            
         }
     }
     
@@ -36,15 +33,14 @@ class MainViewController: UIViewController {
     @IBAction func logOutPressed(_ sender: UIBarButtonItem) {
         
         do {
-            
             try Auth.auth().signOut()
+            
             presentAuthController()
             
         } catch {
-            
             debugPrint(error)
-            Auth.auth().handleAuthError(error: error, vc: self)
             
+            Auth.auth().handleAuthError(error: error, vc: self)
         }
         
     }
