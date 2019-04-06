@@ -22,6 +22,7 @@ struct StoryboardId {
     static let MainViewController = "mainViewController"
     static let ProfileViewController = "profileViewController"
     static let newTravelViewController = "newTravelViewController"
+    static let travelDetailsViewController = "travelDetailsViewController"
     
 }
 
@@ -37,6 +38,7 @@ struct AppColors {
 struct AppImages {
     
     static let ImagePlaceholder = "imagePlaceholder"
+    static let Background = "background"
     
 }
 
@@ -52,5 +54,12 @@ struct Collections {
 struct ImageTypes {
     
     static let JPG = "image/jpg"
+    
+}
+
+struct Identifiers {
+    
+    static let TravelCell = "TravelCell"
+    static let travelDetails = "toTravelDetails"
     
 }

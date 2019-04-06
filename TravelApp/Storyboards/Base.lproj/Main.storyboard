@@ -21,14 +21,23 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="eKB-WY-0Xk">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                             </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sgP-Oc-3IX">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="sgP-Oc-3IX" firstAttribute="leading" secondItem="NJd-du-KIg" secondAttribute="leading" id="6aA-UT-ND5"/>
+                            <constraint firstItem="sgP-Oc-3IX" firstAttribute="centerX" secondItem="UKl-vG-XQA" secondAttribute="centerX" id="I2m-t8-Ytb"/>
                             <constraint firstAttribute="bottom" secondItem="eKB-WY-0Xk" secondAttribute="bottom" id="ZXh-8W-lnQ"/>
+                            <constraint firstAttribute="bottom" secondItem="sgP-Oc-3IX" secondAttribute="bottom" id="b7B-6P-7pN"/>
                             <constraint firstItem="NJd-du-KIg" firstAttribute="trailing" secondItem="eKB-WY-0Xk" secondAttribute="trailing" id="crb-5b-wkE"/>
                             <constraint firstItem="eKB-WY-0Xk" firstAttribute="centerX" secondItem="UKl-vG-XQA" secondAttribute="centerX" id="drf-jo-oRz"/>
                             <constraint firstItem="eKB-WY-0Xk" firstAttribute="leading" secondItem="NJd-du-KIg" secondAttribute="leading" id="eIk-TX-oI0"/>
+                            <constraint firstItem="NJd-du-KIg" firstAttribute="trailing" secondItem="sgP-Oc-3IX" secondAttribute="trailing" id="hP3-J2-jKW"/>
                             <constraint firstItem="eKB-WY-0Xk" firstAttribute="top" secondItem="NJd-du-KIg" secondAttribute="top" id="iio-Sj-IYL"/>
+                            <constraint firstItem="sgP-Oc-3IX" firstAttribute="top" secondItem="NJd-du-KIg" secondAttribute="top" id="oZm-B8-wZb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NJd-du-KIg"/>
                     </view>
@@ -47,6 +56,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="sgP-Oc-3IX" id="bAN-kx-rij"/>
+                        <segue destination="2ab-1f-kHq" kind="show" identifier="toTravelDetails" id="Qt4-EF-5IQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ULd-Oj-qqW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -85,6 +98,70 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DF5-XM-xMd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3522" y="273"/>
+        </scene>
+        <!--Travel Details View Controller-->
+        <scene sceneID="83R-ct-FXj">
+            <objects>
+                <viewController storyboardIdentifier="travelDetailsViewController" id="2ab-1f-kHq" customClass="TravelDetailsViewController" customModule="TravelApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vfb-Df-KDe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="XeK-co-bKN">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="travel6" translatesAutoresizingMaskIntoConstraints="NO" id="fas-Td-X9J">
+                                <rect key="frame" x="0.0" y="88" width="414" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="QoJ-fi-qTc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nr1-eN-BuR">
+                                <rect key="frame" x="20" y="213" width="374" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="pNy-9C-Gy4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <color key="textColor" red="0.95294117649999999" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGw-1x-X9K">
+                                <rect key="frame" x="20" y="408" width="374" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fGw-1x-X9K" firstAttribute="leading" secondItem="Tl9-NY-8fG" secondAttribute="leading" constant="20" id="24I-9B-5GS"/>
+                            <constraint firstItem="XeK-co-bKN" firstAttribute="centerX" secondItem="vfb-Df-KDe" secondAttribute="centerX" id="2aB-4D-5Pa"/>
+                            <constraint firstItem="fGw-1x-X9K" firstAttribute="centerX" secondItem="vfb-Df-KDe" secondAttribute="centerX" id="43q-7H-QgU"/>
+                            <constraint firstItem="nr1-eN-BuR" firstAttribute="leading" secondItem="Tl9-NY-8fG" secondAttribute="leading" constant="20" id="7MQ-eT-Wnn"/>
+                            <constraint firstItem="fas-Td-X9J" firstAttribute="trailing" secondItem="Tl9-NY-8fG" secondAttribute="trailing" id="B8u-PP-Lyr"/>
+                            <constraint firstItem="fas-Td-X9J" firstAttribute="leading" secondItem="Tl9-NY-8fG" secondAttribute="leading" id="Dmi-Ur-cT8"/>
+                            <constraint firstItem="fGw-1x-X9K" firstAttribute="top" secondItem="fas-Td-X9J" secondAttribute="bottom" constant="40" id="INt-ea-aMe"/>
+                            <constraint firstAttribute="bottom" secondItem="XeK-co-bKN" secondAttribute="bottom" id="KLU-9M-8ud"/>
+                            <constraint firstItem="XeK-co-bKN" firstAttribute="leading" secondItem="Tl9-NY-8fG" secondAttribute="leading" id="LjL-fb-F6p"/>
+                            <constraint firstItem="Tl9-NY-8fG" firstAttribute="trailing" secondItem="fGw-1x-X9K" secondAttribute="trailing" constant="20" id="O45-Yr-as5"/>
+                            <constraint firstItem="XeK-co-bKN" firstAttribute="top" secondItem="Tl9-NY-8fG" secondAttribute="top" id="UQ2-Y7-oB4"/>
+                            <constraint firstItem="fas-Td-X9J" firstAttribute="top" secondItem="Tl9-NY-8fG" secondAttribute="top" id="Yvi-MN-gEA"/>
+                            <constraint firstItem="Tl9-NY-8fG" firstAttribute="trailing" secondItem="nr1-eN-BuR" secondAttribute="trailing" constant="20" id="bB7-4O-khN"/>
+                            <constraint firstItem="fas-Td-X9J" firstAttribute="centerX" secondItem="vfb-Df-KDe" secondAttribute="centerX" id="dnm-VB-I6E"/>
+                            <constraint firstItem="Tl9-NY-8fG" firstAttribute="trailing" secondItem="XeK-co-bKN" secondAttribute="trailing" id="jr8-5x-kzZ"/>
+                            <constraint firstItem="nr1-eN-BuR" firstAttribute="centerY" secondItem="fas-Td-X9J" secondAttribute="centerY" id="rYA-kK-366"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Tl9-NY-8fG"/>
+                    </view>
+                    <connections>
+                        <outlet property="travelDescription" destination="fGw-1x-X9K" id="VHN-d7-F8i"/>
+                        <outlet property="travelImage" destination="fas-Td-X9J" id="JSZ-8t-s5r"/>
+                        <outlet property="travelTitle" destination="nr1-eN-BuR" id="oYs-Tc-CSx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fhc-hY-u2F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2576.811594202899" y="991.74107142857133"/>
         </scene>
         <!--New Travel-->
         <scene sceneID="szv-Ub-hXj">
@@ -202,5 +279,6 @@
     <resources>
         <image name="background" width="864" height="1290.5"/>
         <image name="imagePlaceholder" width="284.5" height="118"/>
+        <image name="travel6" width="1152" height="1728"/>
     </resources>
 </document>
